@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changyu's Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const currentHash = window.location.hash.substring(1);
+    navigate(currentHash || 'AboutChangyu');
+});
+
+window.addEventListener('hashchange', () => {
+    const currentHash = window.location.hash.substring(1);
+    navigate(currentHash);
+});
+
+        function navigate(page) {
+            const content = document.getElementById('content');
+            switch (page) {
+            case 'AboutChangyu':
+                content.innerHTML = `
+
+                <section id="About Changyu">
+        <div class="profile">
+            <img src="my.jpg" alt="My Photo" class="profile-photo">
+            <div class="profile-info">
+                <h1>Changyu Yang</h1>
+                <br>
+                <p>2000.04.10</p>
+                <p>Seoul</p>
+                <br>
+                <p><strong>Kangwon National University</strong></p>
+                <p>Computer Engineering</p>
+                <p><strong></strong></p>
+                <br>
+                <br>
+                <p><strong>Contact</strong></p>
+                <br>
+                <div class="link"> 
+                    <a href="https://www.instagram.com/changyu_yy/" target="_blank"><img src="instagram1.jpg" alt="insta" class="png1"></a>
+                    <br>
+                    <a href="mailto:ycg9265@gmail.com"><img src="mail1.jpg" alt="email" class="png2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                `;
+                break;
+            case 'About':
+                content.innerHTML = `
+                <section class="about">
+            <div class="project">
+                <br>
+                <img src="부다페스트3.jpg" alt="Project Image 1" class="img1">
+                <div class="project-info">
+                    <br><br>
+                    <h2>Hi, my name is Changyu.</h2>
+                    <p><br>I was born on April 10, 2000 in Seoul and have been raised there all this time. 
+                        <br><br>Now I am a student at Kangwon National University and my major is computer engineering. 
+                        <br><br>I am an ordinary student who likes to talk with close friends, spend time with my dog, or go on a trip.
+                        <br><br>I'm glad to introduce myself to all of you who will see this.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="부다페스트6.jpg" alt="Project Image 2" class="img2">
+                <div class="project-info">
+                    <h2>About my page.</h2>
+                    <p><br>First of all, thank you for visiting my homepage and welcome you.
+                        <br><br>I'm mainly thinking of uploading pictures of my lovely dog 'Coco' and the pictures I took while traveling. 
+                        <br><br>Also, I'm thinking of uploading memories with my friends or songs that I enjoy listening to from time to time. 
+                        <br><br>I want to share scenes that will become my memories on this page. 
+                        <br><br>And my ultimate goal of making this page is to develop my programming skills, upload my portfolio, and appeal my abilities.</p>
+                </div>
+            </div>
+        </section>
+        <section class="motto">
+            <h2>"We know what we are, but not what we may be."</h2>
+            <p>- William Shakespeare -</p>
+        </section>
+                    
+                `;
+                break;
+            case 'Photo':
+                content.innerHTML = `
+                <body>
+    <nav class="nav2">
+        <button class="scrollBtn" data-scroll="travel">Travel</button>
+        <button class="scrollBtn" data-scroll="coco">Adorable</button>
+    </nav>
+
+    <section id="travel" class="gallery">
+        <h2>Travel</h2>
+        <div class="photos">
+            <div class="photo">
+                <img src="buda1.jpg" alt="Travel 1">
+                <p><strong>a ticket</strong></p>
+            </div>
+            <div class="photo">
+                <img src="buda5.jpg" alt="Travel 2">
+                <p><strong>the riverside</strong></p>
+            </div>
+            <div class="photo">
+                <img src="beer2.jpg" alt="Travel 3">
+                <p><strong>beer</strong></p>
+            </div>
+            <div class="photo">
+                <img src="buda6.jpg" alt="Travel 4">
+                <p><strong>night in Budapest</strong></p>
+            </div>
+
+            <div class="photo">
+                <img src="viena7.jpg" alt="Travel 5">
+                <p><strong>rose garden</strong></p>
+            </div>
+            <div class="photo">
+                <img src="viena9.jpg" alt="Travel 6">
+                <p><strong>cafe Sacher</strong></p>
+            </div>
+            <div class="photo">
+                <img src="viena4.jpg" alt="Travel 7">
+                <p><strong>Klimt - The Kiss</strong></p>
+            </div>
+            <div class="photo">
+                <img src="viena2.jpg" alt="Travel 8">
+                <p><strong>horseman</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="coco" class="gallery">
+        <h2>Coco</h2>
+        <div class="photos">
+            <div class="photo">
+                <img src="coco1.jpg" alt="Dog 1">
+                <p><strong>successful fishing</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco2.jpg" alt="Dog 2">
+                <p><strong>look sideways</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco3.jpg" alt="Dog 3">
+                <p><strong>peep</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco9.jpg" alt="Dog 4">
+                <p><strong>a rabbit</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco4.jpg" alt="Dog 5">
+                <p><strong>ID picture</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco5.jpg" alt="Dog 6">
+                <p><strong>frown</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco7.jpg" alt="Dog 5">
+                <p><strong>she looks annoyed</strong></p>
+            </div>
+            <div class="photo">
+                <img src="coco8.jpg" alt="Dog 6">
+                <p><strong>curl up</strong></p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+                `;
+                initializeScrollButtons();
+                break;
+                case 'Playlist':
+                content.innerHTML = `
+                    <h1>My Playlist</h1>
+                    <p>This is the Playlist page.</p>
+                `;
+                break;
+            default:
+                content.innerHTML = `
+                    <h1>404 - Page Not Found</h1>
+                `;
+            }
+    }
+    function initializeScrollButtons() {
+    document.querySelectorAll('.scrollBtn').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-scroll');
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+}
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#AboutChangyu" onclick="navigate('AboutChangyu')">Profile</a></li>
+                <li><a href="#About" onclick="navigate('About')">About</a></li>
+                <li><a href="#Photo" onclick="navigate('Photo')">Photo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+    </div>  
+
+    <footer class="footer">
+        <p>Copyright ⓒ 2024 Changyu Yang. All rights reserved.</p>
+    </footer>
+</body>
+</html>

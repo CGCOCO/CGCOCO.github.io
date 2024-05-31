@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.about .project {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+.img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid black;
+}
+
+
+.img2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid black;
+}
+
+
+.project-info h2, .project-info p {
+    margin: 0;
+}
+
+.motto {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Papyrus', fantasy;
+}
+
+@media (max-width: 600px) {
+    .about .project {
+        flex-direction: column; 
+        align-items: center;   
+    }
+
+    .img1, .img2 {
+        margin: 20px 0; 
+    }
+
+    .project-info {
+        text-align: center; 
+        padding: 0 20px; 
+    }
+}

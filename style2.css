@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav2 {
+    background-color: #444444;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.scrollBtn {
+    background-color: #444444;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    font-family: 'Papyrus', fantasy;
+}
+
+.scrollBtn:hover {
+    background-color: white;
+    color: black;
+    font-family: 'Papyrus', fantasy;
+}
+
+.gallery {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Papyrus', fantasy; /* 각 섹션의 글꼴 설정 */
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px; /* 사진 간 간격 추가 */
+}
+
+.photo img {
+    width: 300px; 
+    height: 300px; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 10%; 
+    border: 1px solid black; 
+}
+
+.photo p {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .photo {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        flex: 1 1 100%;
+    }
+}

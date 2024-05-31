@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
+.profile-info {
+    max-width: 400px;
+}
+
+.profile-info h1 {
+    margin: 0.3em 0;
+}
+
+.profile-info p {
+    margin: 0.3em 0;
+}
+
+.png1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.7em;
+}
+
+.png2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 37px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px; /* footer의 높이와 같게 설정하여 텍스트를 수직 중앙으로 정렬 */
+    opacity: 0.5;
+}
+
+.footer p {
+    margin: 0; /* 상하 여백 제거 */
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .profile {
+        padding: 1em;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
